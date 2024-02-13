@@ -1,0 +1,96 @@
+* Game UI Design */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: grid;
+  place-items: center;
+  background-image: url("o.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1400px 600px;
+}
+
+h1{
+  text-align: center;
+ 
+  font-family: "Times new roman";
+}
+h1{
+  text-align: center;
+  margin: 0px 0 0px 0;
+  font-family: "cambria";
+  color: white;
+}
+
+.board{
+ 
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: repeat(7, 40px); /* Adjusted column width */
+  grid-template-rows: repeat(7, 40px); /* Adjusted row height */
+  grid-column-gap: 7px; /* Adjusted column gap */
+  grid-row-gap: 7px;
+  border: 1px solid black;
+  height: 250px;
+  width: 390px;
+  background-color:#ff66a3;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+ul{
+  display: grid;
+  place-items:left;
+  
+}
+
+ul p{
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid palevioletred;
+  border-radius: 20px;
+  background-color: #0000ff;
+}
+
+ul:hover{
+  cursor: pointer;
+  background-color: rgb(98, 136, 238);
+}
+@media(max-width:500px){
+  .board{
+      width: 300px;
+  }
+  ul p{
+      width: 55px;
+      height: 55px;
+      
+  }
+  
+}
+@media(max-width:460px){
+  .board{
+      width: 300px;
+  }
+  ul p{
+      width: 40px;
+      height: 40px;
+      
+  }
+  
+}
+@media(max-width:420px){
+  .board{
+      width: 320px;
+  }
+  ul p{
+      width: 30px;
+      height: 30px;
+      
+  }
+  
+}
